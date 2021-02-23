@@ -1,0 +1,4 @@
+<p>Name: {{name}}</p>
+<input type="text" [value]="name" (keydown)="keyDown()" (keypress)="keyPress()" (keyup)="keyUp($event)"
+    (focus)="inputFocus()" (blur)="inputBlur($event)">
+<p [ngStyle]="{'color': msgColor}">{{msg}}</p>

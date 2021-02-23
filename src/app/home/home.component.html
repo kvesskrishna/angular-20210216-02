@@ -1,0 +1,18 @@
+<h1>Home Component</h1>
+<p>This is home component</p>
+<p>
+    Hi {{name}}. Your email is {{email}}. You are {{age}} years old.
+</p>
+<input type="text" [value]="name">
+<button (click)="increaseAge()">Increment</button>
+<button (click)="decreaseAge()">Decrement</button>
+
+
+<input type="text" [(ngModel)]="name">
+
+
+<app-header></app-header>
+
+<app-input-validator></app-input-validator>
+<app-age-validator></app-age-validator>
+<app-conditional-rendering></app-conditional-rendering>
