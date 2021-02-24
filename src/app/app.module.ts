@@ -11,9 +11,10 @@ import { InputValidatorComponent } from './input-validator/input-validator.compo
 import { AgeValidatorComponent } from './age-validator/age-validator.component';
 import { ConditionalRenderingComponent } from './conditional-rendering/conditional-rendering.component';
 import { ImageSelectorComponent } from './image-selector/image-selector.component';
+import { MathsTableComponent } from './maths-table/maths-table.component';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, HeaderComponent, FooterComponent, InputValidatorComponent, AgeValidatorComponent, ConditionalRenderingComponent, ImageSelectorComponent],
+  declarations: [AppComponent, HomeComponent, HeaderComponent, FooterComponent, InputValidatorComponent, AgeValidatorComponent, ConditionalRenderingComponent, ImageSelectorComponent, MathsTableComponent],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],

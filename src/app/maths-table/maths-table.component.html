@@ -1,0 +1,19 @@
+Enter number<input type="text" [(ngModel)]="number" (keyup)="createTable()">
+Enter range <input type="text" [(ngModel)]="range" (keyup)='createTable()'>
+<br>
+<a href="" (mouseover)="changeView('list')">List</a>
+<br>
+<a href="" (mouseover)="changeView('table')">Table</a>
+<ul *ngIf="listView">
+    <li *ngFor="let product of table; let i = index">{{number}} X {{i+1}} = {{product}}</li>
+</ul>
+
+<table *ngIf="!listView" class='table table-dark table-striped'>
+    <tr *ngFor="let product of table; let i = index">
+        <td>{{number}}</td>
+        <td>X</td>
+        <td>{{i+1}}</td>
+        <td>=</td>
+        <td>{{product}}</td>
+    </tr>
+</table>
