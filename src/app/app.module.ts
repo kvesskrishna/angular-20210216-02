@@ -12,9 +12,10 @@ import { AgeValidatorComponent } from './age-validator/age-validator.component';
 import { ConditionalRenderingComponent } from './conditional-rendering/conditional-rendering.component';
 import { ImageSelectorComponent } from './image-selector/image-selector.component';
 import { MathsTableComponent } from './maths-table/maths-table.component';
+import { HighlightDirective } from './directives/highlight.directive';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, HeaderComponent, FooterComponent, InputValidatorComponent, AgeValidatorComponent, ConditionalRenderingComponent, ImageSelectorComponent, MathsTableComponent],
+  declarations: [AppComponent, HomeComponent, HeaderComponent, FooterComponent, InputValidatorComponent, AgeValidatorComponent, ConditionalRenderingComponent, ImageSelectorComponent, MathsTableComponent, HighlightDirective],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],

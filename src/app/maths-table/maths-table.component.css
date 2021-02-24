@@ -1,0 +1,12 @@
+.boldtable {
+  font-weight: bolder;
+  color: grey;
+  background-color: cornsilk;
+}
+
+.shadowedTable {
+  font-weight: bolder;
+  color: black;
+  background-color: cornsilk;
+  text-shadow: grey 5px 5px;
+}

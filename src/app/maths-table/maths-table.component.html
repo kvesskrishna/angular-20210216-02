@@ -4,11 +4,27 @@ Enter range <input type="text" [(ngModel)]="range" (keyup)='createTable()'>
 <a href="" (mouseover)="changeView('list')">List</a>
 <br>
 <a href="" (mouseover)="changeView('table')">Table</a>
-<ul *ngIf="listView">
+<br>
+<a href="" (mouseover)="changeView('fancy')">Fancy</a>
+<ul *ngIf="listView=='list'">
     <li *ngFor="let product of table; let i = index">{{number}} X {{i+1}} = {{product}}</li>
 </ul>
 
-<table *ngIf="!listView" class='table table-dark table-striped'>
+<p appHighlight>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo fuga, soluta minima vero reiciendis quas
+    ratione itaque commodi placeat non iure voluptatum facilis enim architecto voluptatem labore doloribus quisquam
+    deserunt.</p>
+<table *ngIf="listView=='table'" [ngClass]='tableColor'>
+    <tr>
+        <td>
+            <button (click)="changeColor('table-danger')">Danger</button>
+        </td>
+        <td>
+            <button (click)="changeColor('table-primary')">Primary</button>
+        </td>
+        <td>
+            <button (click)="changeColor('table-success')">Success</button>
+        </td>
+    </tr>
     <tr *ngFor="let product of table; let i = index">
         <td>{{number}}</td>
         <td>X</td>
@@ -17,3 +33,7 @@ Enter range <input type="text" [(ngModel)]="range" (keyup)='createTable()'>
         <td>{{product}}</td>
     </tr>
 </table>
+
+<div *ngIf="listView=='fancy'" [ngClass]="tableStyles">
+    <p *ngFor="let product of table; let i = index">{{number}} X {{i+1}} = {{product}}</p>
+</div>
