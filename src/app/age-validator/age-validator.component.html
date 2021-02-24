@@ -4,7 +4,7 @@
 <button (click)="toggleOptions($event)" [value]='age'>Show Input for age</button>
 <button (click)="toggleOptions($event)" [value]='number'>Show Input for number</button>
 <!-- <button>Show Input for number</button> -->
-<div *ngIf="showAgeBox">
+<!-- <div *ngIf="options.name=='age' &&option">
 
     <h1 [ngStyle]="{'color': age?(age>=18?'green':'red'):'black'}">{{age?(age>=18?'Valid age':'Invalid age'):'Please
         enter
@@ -17,4 +17,4 @@
 
     <p [ngStyle]="{'color': isString()?'red':(checkEven()=='Even number'?'green':'blue')}">{{isString()?'Only numbers
         allowed': checkEven()}}</p>
-</div>
+</div> -->

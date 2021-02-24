@@ -12,17 +12,23 @@ export class AgeValidatorComponent implements OnInit {
   number: number;
   showAgeBox: boolean;
   btnText: string;
+  options = [
+    { name: 'age', enable: false },
+    { name: 'number', enable: true },
+  ];
   constructor() {}
 
   ngOnInit(): void {
     this.heading = 'Please enter your age';
     this.headColor = 'black';
-    this.showAgeBox = false;
+    // this.showAgeBox = false;
+
     this.btnText = 'Show Input for age';
   }
   isString() {
     return isNaN(this.number);
   }
+  toggleOptions(e) {}
   toggleBoxes() {
     this.showAgeBox = !this.showAgeBox;
     this.btnText = this.showAgeBox

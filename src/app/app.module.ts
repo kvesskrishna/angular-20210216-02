@@ -10,9 +10,10 @@ import { FooterComponent } from './footer/footer.component';
 import { InputValidatorComponent } from './input-validator/input-validator.component';
 import { AgeValidatorComponent } from './age-validator/age-validator.component';
 import { ConditionalRenderingComponent } from './conditional-rendering/conditional-rendering.component';
+import { ImageSelectorComponent } from './image-selector/image-selector.component';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, HeaderComponent, FooterComponent, InputValidatorComponent, AgeValidatorComponent, ConditionalRenderingComponent],
+  declarations: [AppComponent, HomeComponent, HeaderComponent, FooterComponent, InputValidatorComponent, AgeValidatorComponent, ConditionalRenderingComponent, ImageSelectorComponent],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],
