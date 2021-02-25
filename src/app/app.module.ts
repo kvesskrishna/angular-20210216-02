@@ -15,9 +15,13 @@ import { MathsTableComponent } from './maths-table/maths-table.component';
 import { HighlightDirective } from './directives/highlight.directive';
 import { PipeDemoComponent } from './pipe-demo/pipe-demo.component';
 import { DiscountPipe } from './pipes/discount.pipe';
+import { SearchPipe } from './pipes/search.pipe';
+import { PipeSearchComponent } from './pipe-search/pipe-search.component';
+import { ParentComponent } from './parent/parent.component';
+import { ChildComponent } from './child/child.component';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, HeaderComponent, FooterComponent, InputValidatorComponent, AgeValidatorComponent, ConditionalRenderingComponent, ImageSelectorComponent, MathsTableComponent, HighlightDirective, PipeDemoComponent, DiscountPipe],
+  declarations: [AppComponent, HomeComponent, HeaderComponent, FooterComponent, InputValidatorComponent, AgeValidatorComponent, ConditionalRenderingComponent, ImageSelectorComponent, MathsTableComponent, HighlightDirective, PipeDemoComponent, DiscountPipe, SearchPipe, PipeSearchComponent, ParentComponent, ChildComponent],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],

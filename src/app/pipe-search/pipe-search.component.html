@@ -1,0 +1,19 @@
+<p>pipe-search works!</p>
+<input type="text" placeholder="search" [(ngModel)]='key'><br>
+<table class="table table-info">
+    <thead>
+        <tr>
+
+            <th>Fname</th>
+            <th>Mname</th>
+            <th>Lname</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor='let user of users | search:key'>
+            <td>{{user.fname}}</td>
+            <td>{{user.mname}}</td>
+            <td>{{user.lname}}</td>
+        </tr>
+    </tbody>
+</table>
