@@ -13,9 +13,11 @@ import { ConditionalRenderingComponent } from './conditional-rendering/condition
 import { ImageSelectorComponent } from './image-selector/image-selector.component';
 import { MathsTableComponent } from './maths-table/maths-table.component';
 import { HighlightDirective } from './directives/highlight.directive';
+import { PipeDemoComponent } from './pipe-demo/pipe-demo.component';
+import { DiscountPipe } from './pipes/discount.pipe';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, HeaderComponent, FooterComponent, InputValidatorComponent, AgeValidatorComponent, ConditionalRenderingComponent, ImageSelectorComponent, MathsTableComponent, HighlightDirective],
+  declarations: [AppComponent, HomeComponent, HeaderComponent, FooterComponent, InputValidatorComponent, AgeValidatorComponent, ConditionalRenderingComponent, ImageSelectorComponent, MathsTableComponent, HighlightDirective, PipeDemoComponent, DiscountPipe],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],

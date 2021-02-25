@@ -1,0 +1,21 @@
+<p>pipe-demo works!</p>
+{{text | uppercase}}
+
+{{text | lowercase}}
+
+
+{{user|json}}
+
+
+
+<br>
+
+{{date}}
+<br>
+{{date|date:'YYYY MM dd HH:mm'}}
+
+<br>
+Actual price: {{price| currency:'EUR'}}
+
+<br>
+After discount: {{price | discount: 20:18 | currency: 'EUR'}}
