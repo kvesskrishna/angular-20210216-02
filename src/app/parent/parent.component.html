@@ -1,8 +1,10 @@
 <div>
 
-    <!-- <p>parent works!</p>
+    <p>parent works!</p>
     <p>Number: {{number}}</p>
-    <app-child (updateNumber)="increaseNumber($event)" [counter]='number'></app-child> -->
-    Message: {{message}}
-    <app-child></app-child>
+    <app-child (updateNumber)="changeNum($event)" (decNum)="changeNum($event)" [counter]='number'></app-child>
+    <button (click)="pin()">Increment</button>
+    {{name}}
+    <!-- Message: {{message}}
+    <app-child></app-child>-->
 </div>

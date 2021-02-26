@@ -9,11 +9,15 @@ export class HomeComponent implements OnInit {
   name: string;
   email: string = '';
   age = 45;
+  destoryFooter = false;
   constructor() {}
   ngOnInit() {
     let email = 'joihn@asf.com';
     this.email = email;
     this.name = 'John Doe';
+  }
+  toggleFooter() {
+    this.destoryFooter = !this.destoryFooter;
   }
   increaseAge() {
     // if (this.age <= 49) this.age = this.age + 1;
