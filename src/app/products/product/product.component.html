@@ -1,0 +1,15 @@
+<div class="card">
+    <h3>{{product.title}}</h3>
+    <img [src]="product.image" alt="product image">
+    <br>
+    <p>
+        {{product.description}}
+    </p>
+    <p>{{product.price | currency: 'INR'}}</p>
+    <p> {{product.price | discount: 20:10 | currency: 'INR'}} </p>
+    <p>Quantity {{product.quantity}}</p>
+    <button (click)="updateQuantity('add', product.id)" class="btn btn-success">+</button>
+    <button (click)="updateQuantity('remove', product.id)" class="btn btn-danger">-</button>
+    <br>
+    <button class="btn btn-info">Explore</button>
+</div>

@@ -20,9 +20,11 @@ import { PipeSearchComponent } from './pipe-search/pipe-search.component';
 import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './child/child.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { ProductsComponent } from './products/products.component';
+import { ProductComponent } from './products/product/product.component';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, HeaderComponent, FooterComponent, InputValidatorComponent, AgeValidatorComponent, ConditionalRenderingComponent, ImageSelectorComponent, MathsTableComponent, HighlightDirective, PipeDemoComponent, DiscountPipe, SearchPipe, PipeSearchComponent, ParentComponent, ChildComponent, PageNotFoundComponent],
+  declarations: [AppComponent, HomeComponent, HeaderComponent, FooterComponent, InputValidatorComponent, AgeValidatorComponent, ConditionalRenderingComponent, ImageSelectorComponent, MathsTableComponent, HighlightDirective, PipeDemoComponent, DiscountPipe, SearchPipe, PipeSearchComponent, ParentComponent, ChildComponent, PageNotFoundComponent, ProductsComponent, ProductComponent],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],

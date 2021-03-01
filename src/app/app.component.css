@@ -2,3 +2,12 @@
   font-weight: bold;
   color: red;
 }
+ul > li {
+  display: inline;
+  margin: 0 5px;
+}
+
+ul {
+  padding: 12px;
+  border: 1px solid grey;
+}
