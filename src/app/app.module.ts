@@ -24,6 +24,8 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { ProductsComponent } from './products/products.component';
 import { ProductComponent } from './products/product/product.component';
 import { UsersComponent } from './users/users.component';
+import { UserComponent } from './users/user/user.component';
+import { UsersService } from './services/users.service';
 
 @NgModule({
   declarations: [
@@ -47,9 +49,10 @@ import { UsersComponent } from './users/users.component';
     ProductsComponent,
     ProductComponent,
     UsersComponent,
+    UserComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
-  providers: [],
+  providers: [UsersService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

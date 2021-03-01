@@ -20,6 +20,7 @@
                 Phone
             </th>
             <th>City</th>
+            <th>Action</th>
         </tr>
     </thead>
     <tbody>
@@ -28,6 +29,9 @@
             <td>{{user.email}}</td>
             <td>{{user.phone}}</td>
             <td>{{user.address.city}}</td>
+            <td>
+                <a href="" [routerLink]="['/user', user.id, user.name]" class="btn-success btn">View</a>
+            </td>
         </tr>
     </tbody>
 </table>
