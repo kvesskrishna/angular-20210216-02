@@ -5,6 +5,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { ParentComponent } from './parent/parent.component';
 import { PipeDemoComponent } from './pipe-demo/pipe-demo.component';
 import { ProductsComponent } from './products/products.component';
+import { UsersComponent } from './users/users.component';
 
 const routes: Routes = [
   // {path: '', component: HomeComponent}
@@ -13,6 +14,7 @@ const routes: Routes = [
   { path: 'parent', component: ParentComponent },
   { path: 'pipes', component: PipeDemoComponent },
   { path: 'products', component: ProductsComponent },
+  { path: 'users', component: UsersComponent },
 
   { path: '**', component: PageNotFoundComponent },
 ];

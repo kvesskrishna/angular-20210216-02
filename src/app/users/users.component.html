@@ -1,0 +1,33 @@
+<div>
+    <p>
+        {{response| json}}
+    </p>
+    <input type="text" placeholder="Title" [(ngModel)]="title">
+    <br><input type="text" placeholder="Body" [(ngModel)]="body">
+    <br><input type="text" placeholder="User id" [(ngModel)]="userId">
+    <br>
+    <button type="submit" (click)="submit()">
+        Save
+    </button>
+
+</div>
+<table class="table table-info">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>
+                Phone
+            </th>
+            <th>City</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let user of users">
+            <td>{{user.name}}</td>
+            <td>{{user.email}}</td>
+            <td>{{user.phone}}</td>
+            <td>{{user.address.city}}</td>
+        </tr>
+    </tbody>
+</table>
