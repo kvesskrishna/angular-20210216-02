@@ -7,6 +7,8 @@ const products = [
     quantity: 0,
     image:
       'https://www.printwand.com/blog/media/2012/01/ultimate-guide-to-your-product-launch.jpg',
+    color: ['red', 'black', 'blue'],
+    sizes: ['small', 'big'],
   },
   {
     id: 6,

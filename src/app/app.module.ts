@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { UsersModule } from './users/users.module';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -23,8 +24,8 @@ import { ChildComponent } from './child/child.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { ProductsComponent } from './products/products.component';
 import { ProductComponent } from './products/product/product.component';
-import { UsersComponent } from './users/users.component';
-import { UserComponent } from './users/user/user.component';
+// import { UsersComponent } from './users/users.component';
+// import { UserComponent } from './users/user/user.component';
 import { UsersService } from './services/users.service';
 
 @NgModule({
@@ -48,10 +49,16 @@ import { UsersService } from './services/users.service';
     PageNotFoundComponent,
     ProductsComponent,
     ProductComponent,
-    UsersComponent,
-    UserComponent,
+    // UsersComponent,
+    // UserComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule,
+    UsersModule,
+  ],
   providers: [UsersService],
   bootstrap: [AppComponent],
 })

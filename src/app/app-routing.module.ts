@@ -15,8 +15,8 @@ const routes: Routes = [
   { path: 'parent', component: ParentComponent },
   { path: 'pipes', component: PipeDemoComponent },
   { path: 'products', component: ProductsComponent },
-  { path: 'users', component: UsersComponent },
-  { path: 'user/:id/:name', component: UserComponent },
+  { path: 'users', loadChildren: './users/users.module#UsersModule' },
+  // { path: 'user/:id/:name', component: UserComponent },
 
   { path: '**', component: PageNotFoundComponent },
 ];
