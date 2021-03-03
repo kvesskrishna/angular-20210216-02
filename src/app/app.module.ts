@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
-import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { UsersModule } from './users/users.module';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -27,6 +27,9 @@ import { ProductComponent } from './products/product/product.component';
 // import { UsersComponent } from './users/users.component';
 // import { UserComponent } from './users/user/user.component';
 import { UsersService } from './services/users.service';
+import { ImagesModule } from './images/images.module';
+import { SigninComponent } from './signin/signin.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -49,15 +52,18 @@ import { UsersService } from './services/users.service';
     PageNotFoundComponent,
     ProductsComponent,
     ProductComponent,
+    SigninComponent,
+    LoginComponent,
     // UsersComponent,
     // UserComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
     FormsModule,
     HttpClientModule,
     UsersModule,
+    ImagesModule,
+    AppRoutingModule,
   ],
   providers: [UsersService],
   bootstrap: [AppComponent],

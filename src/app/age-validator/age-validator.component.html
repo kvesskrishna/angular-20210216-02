@@ -3,13 +3,13 @@
 <input type="text" (keyup)="updateAge($event)"> -->
 <button (click)="toggleOptions($event)" [value]='age'>Show Input for age</button>
 <button (click)="toggleOptions($event)" [value]='number'>Show Input for number</button>
+<input placeholder="Enter age" type="text" [(ngModel)]="age">
 <!-- <button>Show Input for number</button> -->
 <!-- <div *ngIf="options.name=='age' &&option">
 
     <h1 [ngStyle]="{'color': age?(age>=18?'green':'red'):'black'}">{{age?(age>=18?'Valid age':'Invalid age'):'Please
         enter
         age'}}</h1>
-    <input placeholder="Enter age" type="text" [(ngModel)]="age">
 </div>
 <br>
 <div *ngIf="!showAgeBox">

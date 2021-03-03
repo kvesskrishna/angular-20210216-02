@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import images from '../data/images';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
   name: string;
+  images: any = images;
   email: string = '';
   age = 45;
   destoryFooter = false;

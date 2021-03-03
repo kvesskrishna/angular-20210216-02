@@ -1,0 +1,19 @@
+<!-- <p>login works!</p>
+<div class="card" *ngIf="!userlogged">
+    <input type="text" placeholder="Username" [(ngModel)]="uname"><br>
+    <input type="text" placeholder="Password" [(ngModel)]="pwd"><br>
+    <button (click)="login()">Login</button>
+    <p>
+        {{message}}
+    </p>
+</div>
+<div *ngIf="userlogged">
+    User already logged in. <button (click)="logout()">Logout</button>
+</div> -->
+<form #loginForm="ngForm" (ngSubmit)="login(loginForm)" novalidate>
+    <input type="text" name='uname' ngModel #uname='ngModel' required>
+    <p *ngIf="uname.errors">Uname is required</p>
+    <input type="text" name='password' ngModel #password='ngModel' required>
+    <p *ngIf="password.errors">Password is required</p>
+    <input type="submit">
+</form>

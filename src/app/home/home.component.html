@@ -20,7 +20,20 @@
 <!-- <app-maths-table></app-maths-table> -->
 <!-- <app-pipe-demo></app-pipe-demo> -->
 <!-- <app-pipe-search></app-pipe-search> -->
+<ul>
+    <li><a href="" [routerLink]="['/home']">Footer</a></li>
+    <li><a href="" [routerLink]="['table']">Table</a></li>
+</ul>
+<ul>
+    <li *ngFor="let image of images">
+        <a [routerLink]="['images', image.url]" href="">{{image.name}}</a>
+    </li>
+</ul>
+<h3>Router Outlet of Home</h3>
+<!-- <router-outlet></router-outlet> -->
 <app-parent></app-parent>
 <!-- <button (click)="toggleFooter()">Toggle Footer</button> -->
 <app-child></app-child>
+<app-age-validator></app-age-validator>
+
 <app-footer *ngIf="!destoryFooter"></app-footer>
